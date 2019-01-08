@@ -7,48 +7,31 @@
 	</head>
 	<body>
 		<!-- <h1 class="lol"> уля </h1> -->
-		<header>
+		<header class="main-header">
 			<a href="#"><img src="img/nerds-logo.svg" alt = "Лого nerds"></a>
-			<ul>
+			<ul class="main-menu">
 				<li><a href="#">Студия</a></li>
 				<li><a href="#">Клиенты</a></li>
 				<li><a href="#">Магазин</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-			<div>Корзина</div> 
+			<div class ="cart">
+				<a href="#"><img src="img/cart-icon.svg" alt = ""></a>
+				<a href="#">Корзина</a>
+			</div> 
 		</header> 
 
 		<main> 
-			
-			<ul class="slidebar">
-				<li>
-					<section class="presentation"> 
-						<b>Долго, дорого, скрупулезно</b> 
-						<p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p> 
+				<div class="presentation">
+						<div class="advantages"> 
+							<b>Долго, дорого, скрупулезно</b> 
+							<p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p> 
 						<div class="button"><a href="#">Узнать больше</a></div> 
-					</section> 
+					</div> 
 					<img src="img/nerds-index-slide1.png" alt = "Слайд 1">
-				</li>
-				<li>
-					<section class="presentation"> 
-						<b>Любим математику как никто другой</b> 
-						<p>Никакого креативы, только математические формулы для расчета идеальных пропорций.</p> 
-						<div class="button"><a href="#">Узнать больше</a></div> 
-					</section> 
-					<img src="img/nerds-index-slide2.png" alt = "Слайд 2">
-				</li>
-				<li>
-					<section class="presentation"> 
-						<b>Только ночь, только хардкор</b> 
-						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p> 
-						<div class="button"><a href="#">Узнать больше</a></div> 
-					</section> 
-					<img src="img/nerds-index-slide3.png" alt = "Слайд 3">
-				</li>
-			</ul>
+				</div>
 			
-			<section class="services"> 
-				<ul> 
+				<ul class="services"> 
 					<li> 
 						<img src="img/illustration-1.jpg" alt = "Иллюстрация веб-сайта">
 						<h3>Веб-сайты</h3> 
@@ -68,22 +51,22 @@
 						<div class="button"><a href="#">Заказать</a></div> 
 					</li> 
 				</ul> 
-			</section> 
 			<section class="description"> 
-				<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b> 
-				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p> 
-				<section> 
-					<h3>Выполняем заказы на разработку:</h3> 
+				<div>
+					<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b> 
+					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p> 
+					<p>Выполняем заказы на разработку:</p> 
 					<ul> 
 						<li>Веб-сайтов любой сложности</li> 
 						<li>Мобильных приложений для iOS и Android</li> 
 						<li>Слайдшоу и видео для корпоративных презентаций</li> 
 					</ul> 
 					</li> 
+				</div>
+				<div>	
 					<img src="img/nerds-illustration.jpg" alt="Лого картинка"> 
-					<h3>С 2004 года любим точность во всем:</h3> 
-					<div> 
-						<ul>
+					<p class="text-center">С 2004 года любим точность во всем:</p> 
+						<ul class="description-numbers">
 							<li>
 								<b>146</b>
 								<span>%</span>
@@ -99,19 +82,17 @@
 								<p>Минимальная предоплата</p> 
 							</li>
 						</ul>
-					</div> 
-				</section> 
+				</div> 
 			</section> 
-			<section> 
-				<ul> 
+				<ul class="partners"> 
 					<li><a href="#"><img src="img/logo-1.png" alt= "Logo_htmlacademy"></a></li> 
 					<li><a href="#"><img src="img/logo-2.png" alt= "Logo_barbershop"></a></li> 
 					<li><a href="#"><img src="img/logo-3.png" alt= "Logo_pink"></a></li> 
 					<li><a href="#"><img src="img/logo-4.png" alt= "Logo_mishka"></a></li> 
 				</ul> 
-			</section> 
 			<section class="contacts"> 
-				<img src="" alt="Карта"> 
+				<img src="img/map.png" alt="Карта"> 
+				<img src="img/map-marker.png" alt="Карта"> 
 				<div> 
 				<b>Nerds design studio</b> 
 				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
@@ -131,12 +112,14 @@
 
 			<footer> 
 				<ul> 
-					<li><a href="#"><img src="" alt= "Logo_VK"></a></li> 
-					<li><a href="#"><img src="" alt= "Logo_FB"></a></li> 
-					<li><a href="#"><img src="" alt= "Logo_instagramm"></a></li> 
+					<li><a href="#">Logo_VK</a></li> 
+					<li><a href="#">Logo_FB</a></li> 
+					<li><a href="#">Logo_instagramm</a></li> 
 				</ul> 
-				<b>Давайте дружить, это выгодно!</b> 
-				<p>Скидка 10% для друзей из социальных сетей.</p> 
+				<div>
+					<b>Давайте дружить, это выгодно!</b> 
+					<p>Скидка 10% для друзей из социальных сетей.</p> 
+				</div>
 			</footer> 
 	</body>
 </html>
