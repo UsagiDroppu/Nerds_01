@@ -3,6 +3,14 @@ body {
 	padding: 0;
 }
 
+header a{
+	font-family: Roboto medium, Arial, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+header ul {
+	list-style-type:none;
+}
 .text-center {
 	text-align: center;
 }
@@ -84,6 +92,7 @@ body {
 	justify-content: space-between;
 	margin: 80px auto;
 }
+
 
 footer {
 	width: 960px;
