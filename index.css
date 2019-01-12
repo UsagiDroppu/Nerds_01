@@ -1,7 +1,19 @@
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 body {
 	padding:0;
 	margin: 0;
+	font-family: Roboto, Arial, sans-serif;
 }
+
+/*-----------------Header-----------------*/
 
 header {
 	width: 1160px;
@@ -12,26 +24,109 @@ header {
 	height: 65px;	
 }
 
-/*.full-menu {
-	display: flex;
-	padding-bottom: 17px;
-	padding-top: 32px;
-}*/
-
+header a {
+	text-decoration: none;
+	color: #000000;
+	font-size:16px;
+	text-transform: uppercase;
+	font-weight:500;
+}
 
 .main-menu {
 	display: flex;
 	width: 486px;
 	margin-top: 32px;
-
-	/*padding-left: 177px;
-	padding-right: 222px;*/
 }
 
 .main-menu li {
-/*	padding-left:23px;
-	padding-right: :23px;*/
+	 list-style-type: none;
 }
-/*.cart {
-	display: flex;
-}*/
+
+.cart {
+	margin-top: 32px;
+}
+
+/*-----------------Maain-----------------*/
+
+main a {
+	text-decoration: none;
+	font-size:16px;
+	text-transform: uppercase;
+	font-weight:500;
+	/*color: white;*/
+}
+
+/*-----------------section class="presentation">-----------------*/
+
+.advantages b {
+	font-size:55px;
+	font-weight:500;
+}
+
+.advantages p {
+	font-size:16px;
+	font-weight:400;
+}
+
+/*-----------------section Услуги-----------------*/
+
+.services h3 {
+	font-size:24px;
+	text-transform: uppercase;
+	font-weight:700;
+}
+
+.services p {
+	font-size:16px;
+	font-weight:400;
+}
+
+/*-----------------section class="description"-----------------*/
+
+.description {
+	font-size:16px;
+	font-weight:400;
+}
+
+.description b {
+	font-size:45px;
+	font-weight:500;
+}
+
+.description p {
+	font-size:16px;
+	font-weight:700;
+
+}
+
+.description span {
+	font-weight:700;
+	vertical-align: super;
+	font-size:0.5em;
+}
+
+/*-----------------section class="contacts"-----------------*/
+
+.contacts b{
+	text-transform: uppercase;
+	font-size:18px;
+	font-weight:700;
+}
+.contacts p{
+	font-size:16px;
+	font-weight:400;
+	color:#666666;
+}
+
+/*-----------------Footer-----------------*/
+
+footer b{
+	font-size:36px;
+	font-weight:700;
+}
+
+footer p{
+	font-size:16px;
+	font-weight:400;
+	color:#444444;
+}
