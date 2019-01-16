@@ -59,10 +59,10 @@
 
 				<section class="description"> 
 					<h2 class="visually-hidden">О нас</h2>
-					<div>
-						<p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-						Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы
-						<p>Выполняем заказы на разработку:</p>
+					<div class="description-text">
+						<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+						<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
+						<b>Выполняем заказы на разработку:</b>
 						<ul> 
 							<li>Веб-сайтов любой сложности</li> 
 							<li>Мобильных приложений для iOS и Android</li> 
@@ -70,11 +70,11 @@
 						</ul> 
 						</li> 
 					</div>
-					<div>	
+					<div class="description-stats">	
 						<img src="img/nerds-illustration.jpg" alt="Лого картинка"> 
 						
 						<p>С 2004 года любим точность во всем:</p> 
-							<ul class="description-numbers">
+							<ul>
 								<li>
 									<b>146<span>%<span></b>
 									<p>Уровень самоотдачи</p>
@@ -112,44 +112,48 @@
 				</div>
 			</section>
 
-			<section class="writeToUs">
-				<h2 class="visually-hidden">Обратная связь</h2>
-				<b>Напишите нам:</b>
-				<img src="img/close-cross.svg" alt="Закрыть форму"> 
-				<ul>
-					<li>
-						<label for="name">Ваше имя</label>
-						<input type="text" id="name" placeholder="Имя Фамилия" required >
-					</li>
-					<li>
-						<label for="email">Ваш e-mail</label>
-						<input type="text" id="email" placeholder="email@example.com">
-					</li>
-					<li>
-						<label for="letterText">Текст письма</label>
-						<input type="text" id="letterText" placeholder="В свободной форме">
-					</li>
-				</ul>
-				<a class="button"href="#">Отправить</a>
-			</section>
 			</main> 
 
 			<footer> 
-				<ul> 
-					<li>
-						<a href="#"><div class="circle"><img src="img/vk-icon.svg" alt = "Лого ВКонтакте"></div></a>
-					</li> 
-					<li>
-						<a href="#"><div class="circle"><img src="img/fb-icon.svg" alt = "Лого Фейсбука"></div></a>
-					</li> 
-					<li>
-						<a href="#"><div class="circle"><img src="img/insta-icon.svg" alt = "Лого Инстаграмма"></div></a>
-					</li> 
-				</ul> 
-				<div>
-					<b>Давайте дружить, это выгодно!</b> 
-					<p>Скидка 10% для друзей из социальных сетей.</p> 
-				</div>
+				<section class="writeToUs"><div>
+					<h2 class="visually-hidden">Обратная связь</h2>
+					<b>Напишите нам:</b>
+					<img src="img/close-cross.svg" alt="Закрыть форму"> 
+					<ul>
+						<li>
+							<p><label for="name">Ваше имя</label></p>
+							<input type="text" id="name" placeholder="Имя Фамилия" required >
+						</li>
+						<li>
+							<p><label for="email">Ваш e-mail</label></p>
+							<input type="text" id="email" placeholder="email@example.com">
+						</li>
+						<li>
+							<p><label for="letterText">Текст письма</label></p>
+							<input class="text-form" type="text" id="letterText" placeholder="В свободной форме">
+						</li>
+					</ul>
+					<a class="button"href="#">Отправить</a></div>
+				</section>
+
+
+				<section class="social">	
+					<ul> 
+						<li>
+							<a href="#"><div class="circle"><img src="img/vk-icon.svg" alt = "Лого ВКонтакте"></div></a>
+						</li> 
+						<li>
+							<a href="#"><div class="circle"><img src="img/fb-icon.svg" alt = "Лого Фейсбука"></div></a>
+						</li> 
+						<li>
+							<a href="#"><div class="circle"><img src="img/insta-icon.svg" alt = "Лого Инстаграмма"></div></a>
+						</li> 
+					</ul> 
+					<div class="friends">
+						<b>Давайте дружить, это выгодно!</b> 
+						<p>Скидка 10% для друзей из социальных сетей.</p> 
+					</div>
+				</section>
 			</footer>
 	</body>
 </html>

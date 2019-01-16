@@ -11,6 +11,11 @@ body {
 	padding:0;
 	margin: 0;
 	font-family: Roboto, Arial, sans-serif;
+
+}
+
+body li {
+	list-style-type: none;
 }
 
 /*-----------------Header-----------------*/
@@ -197,85 +202,85 @@ main a {
 	color: #edc265;
 }
 
-/*-----------------section class="description"-----------------*/
+/*-----------------О нас-----------------*/
 
 .description {
 	display: flex;
-	font-size:16px;
-	font-weight:400;
-	width:1160px;
+	height: 525px;
+	width: 1160px;
 	margin-left: 140px;
-}
-
-.description img {
-	margin-bottom: 40px;
-}
-
-.description div:nth-of-type(1) {
-	width:660px;
-	margin-top:65px;
 	margin-right: 140px;
 }
 
-.description div:nth-of-type(2) {
-	margin-top:40px;
-	/*text-align: right;*/
-	width:360px;
+.description-text {
+	font-size:16px;
+	font-weight:400;
+	line-height: 24px;
+	width: 660px;
+	margin-top: 80px;
+	margin-bottom: 75px;
 }
 
-.description b {
+.description-text b:nth-of-type(1) {
 	font-size:45px;
 	font-weight:500;
 	line-height: 45px;
-	margin-bottom: 25px;
+	text-transform: none;
 }
 
-.description p {
+.description-text b {
 	font-size:16px;
 	font-weight:700;
-	line-height: 24px;
-	/*margin-top: 25px;*/
-	margin-bottom: 40px;
+	text-transform: uppercase;	
 }
 
-.description p:nth-of-type(2) {
-	margin-bottom: 0;
-	margin-top: 45px;
+.description-text li {
+	margin-top:35px;
 }
 
-.description li {
-	margin-top: 30px;
+.description-text p {
+	margin-bottom:45px;
+	margin-top: 35px;
+} 
+
+.description-stats {
+	margin-top: 40px;
+	width: 360px;
+	margin-left: 140px;
 }
 
-.description span {
+.description-stats p {
+	font-size:16px;
 	font-weight:700;
-	vertical-align: super;
-	font-size:0.5em;
-}
-
-.description div:nth-of-type(2) p:nth-of-type(1) {
-	text-transform: uppercase;
+	text-transform: uppercase;	
 	text-align: center;
 }
 
-.description-numbers {
-	display: flex;
-	padding: 0;
-	margin: 0;
+/*.description-stats li {}*/
+
+.description-stats li b {
+	font-size:45px;
+	font-weight:700;
 }
 
-.description-numbers li {
-	list-style-type: none;
-	text-align: left;
+.description-stats span {
+	font-size:0.5em;
+	vertical-align:super;
 }
 
-.description div .description-numbers p {
-	text-transform: lowercase;
-	margin:0;
-	padding: 0;
+.description-stats li p {
+	font-size:16px;
 	font-weight:400;
-	font-size: 16px;
 	line-height: 18px;
+	text-transform: none;	
+	text-align: left;	
+	margin-right: 25px;
+}
+
+.description-stats ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
 }
 
 /*-----------------Партнеры-----------------*/
@@ -305,7 +310,11 @@ main a {
 	width:1160px;
 	margin-left:140px;
 }
-/*-----------------section class="contacts"-----------------*/
+/*-----------------Контакты-----------------*/
+
+.contacts {
+	margin-top: 80px;
+}
 
 .contacts b {
 	margin-left: 50px;
@@ -338,6 +347,20 @@ main a {
 
 /*-----------------Обратная связь-----------------*/
 
+.writeToUs {
+	width: 960px;
+	background-color: #c5c4c4;
+	height: 590px;	
+}
+
+.writeToUs div {
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-top: 70px;
+	margin-top: 50px;
+
+}
+
 .writeToUs b{
 	font-size:45px;
 	font-weight:500;
@@ -348,10 +371,17 @@ main a {
 	font-weight:700;
 }
 
-.writeToUs li input{
+.writeToUs input {
 	font-size:16px;
 	font-weight:400;
 	border-color:#d7dcde;
+	width: 360px;
+	height: 50px;
+}
+
+.writeToUs li .text-form {
+	width: 760px;
+	height: 120px;
 }
 
 .writeToUs li input:hover {
@@ -375,6 +405,17 @@ main a {
 	opacity: .1;
 }
 
+.writeToUs ul {
+	margin:0;
+	padding:0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.writeToUs li {
+	width: 360px;
+}
 /*-----------------Footer-----------------*/
 
 .circle {
@@ -386,9 +427,6 @@ main a {
 	display: table;
 }
 
-.circle img {
-
-}
 
 footer b {
 	font-size:36px;
@@ -400,6 +438,36 @@ footer p {
 	font-weight:400;
 	color:#444444;
 }
+
+.social {
+	display: flex;
+	margin-top: 70px;
+	margin-left: 144px;
+	margin-bottom: 70px;
+}
+
+.social ul {
+	margin:0;
+	padding:0;
+	display: flex;
+	min-width: 260px;
+	justify-content: space-between;
+}
+
+.friends {
+	margin-left:140px;
+}
+
+.friends p {
+	font-size:16px;
+	font-weight:400;
+}
+
+.friends b {
+	font-size:36px;
+	font-weight:700;
+}
+
 
 /*----------------------------------*/
 .button {
@@ -418,11 +486,4 @@ footer p {
 
 .yellow {
 	background-color: #efc84a;
-}
-
-.buton:hover,
-.buton:focus,
-.buton:active,
-{
-
 }
