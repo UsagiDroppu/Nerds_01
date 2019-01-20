@@ -11,11 +11,21 @@ body {
 	padding:0;
 	margin: 0;
 	font-family: Roboto, Arial, sans-serif;
-
+	width: 100%;
 }
 
 body li {
 	list-style-type: none;
+}
+
+body a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+body ul {
+	padding:0;
+	margin: 0;
 }
 
 /*-----------------Header-----------------*/
@@ -23,11 +33,13 @@ body li {
 header {
 	width: 1160px;
 	display:flex;
-	margin-left: 140px;
-	margin-right: 140px;
-	margin-top: 50px;
-	margin-bottom: 18px;
-	height: 65px;	
+	padding-left: 140px;
+	padding-right: 140px;
+	padding-top: 50px;
+	padding-bottom: 18px;
+	height: 65px;
+	z-index:1;
+	position: relative;
 }
 
 header a {
@@ -46,6 +58,7 @@ header a {
 	width: 486px;
 	margin-top: 32px;
 	text-align:left;
+
 }
 
 .main-menu li {
@@ -54,27 +67,27 @@ header a {
 }
 
 .main-menu li a:hover,
-.cartText:hover
+.cart a:hover
 {
 	color:#fb565a;
 }
 
 .main-menu li a:focus,
-.cartText:focus
+.cart a:focus
 {
-	text-decoration: underline;
-	text-decoration-color:#fb565a;
+	padding-bottom:7px;
+	border-bottom: 2px solid #fb565a;
 	outline:none;
 }
 
 .main-menu li a:active,
-.cartText:active
+.cart a:active
 {
 	color: rgba(0,0,0,0.3);
 }
 
 
-.mainImg img:hover,
+.main-header img:hover
 {
 	opacity: 0.8;
 }
@@ -86,21 +99,23 @@ header a {
 
 .cart {
 	/*text-align: right;*/
-	display: flex;
-	margin-left: 223px;
+	display: inline-flex;
+	/*margin-left: 223px;*/
 	margin-top: 32px;
-	width:117px;
+	/*width:117px;*/
+	margin-left:auto;
 }
 
 .cart img {
 	opacity: 0.3;
+	margin-right:15px;
 }
 
-.cartText {
+/*.cartText {
 	padding-left:25px;
-}
+}*/
 
-/*-----------------Maain-----------------*/
+/*-----------------Main-----------------*/
 
 main a {
 	text-decoration: none;
@@ -114,17 +129,23 @@ main a {
 
 .presentation {
 	display: flex;
+	justify-content: space-between;
 	margin-left: 140px;
+	z-index:1;
+	position: relative;
+	height: 412px;
+	width: 1130px;
 }
 
 .presentation img {
-	max-width: 700px;
+	/*max-width: 700px;*/
+	max-height: 412px;
 	object-fit: contain;
 }
 
 .advantages {
 	margin-top:70px;
-	margin-right: 55px;
+	/*margin-right: 50px;*/
 }
 
 .advantages b {
@@ -156,7 +177,8 @@ main a {
 	display: flex;
 	width:1100px;
 	margin-left: 140px;
-	margin-bottom: 85px;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 .services li {
@@ -309,20 +331,37 @@ main a {
 .partners {
 	width:1160px;
 	margin-left:140px;
+	height:180px;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
+
+.verticalBorder {
+	margin:auto 0;
+	display: block;
+	height: 52px;
+	width: 2px;
+	background-color: #eeeeee;
+}
+
 /*-----------------Контакты-----------------*/
 
 .contacts {
 	margin-top: 80px;
+	position: relative;
 }
 
 .contacts b {
+	margin-top:0;
 	margin-left: 50px;
 	text-transform: uppercase;
 	font-size:18px;
 	font-weight:700;
+	margin-bottom: 30px;
 }
 .contacts p {
+	margin-top:0;
+	margin-bottom:20px;
 	margin-left: 50px;
 	font-size:16px;
 	font-weight:400;
@@ -331,19 +370,31 @@ main a {
 }
 
 .contacts div {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
 	padding-top: 54px;
-	margin-left: 140px;
 	width: 320px;
-	background-color: #c5c4c4;
+	background-color: #fff;
 	height: 256px;
+	left:140px;
+	top:54px;
 }
 
-.contacts a {
+.mapMarker {
+	display: block;
+	position: absolute;
+	top: 88px;
+	left: 680px;
+
+}
+
+/*.contacts a {
 	margin:0 auto;
 	display: block;
 	width: 220px;
 }
-
+*/
 
 /*-----------------Обратная связь-----------------*/
 
@@ -424,7 +475,8 @@ main a {
 	background-color:#e1e1e1;
 	border-radius:40px;
 	text-align: center;
-	display: table;
+	display: flex;
+	justify-content: space-around;
 }
 
 
@@ -468,9 +520,22 @@ footer p {
 	font-weight:700;
 }
 
+.circle:hover {
+	background-color:#e74246;
+}
+
+.circle:active {
+	background-color:#d7373b;
+}
+
+.circle:active img{
+	opacity: 0.3;
+}
 
 /*----------------------------------*/
+
 .button {
+	display: block;
 	text-align:center;
 	color: #ffffff;
 	vertical-align: middle;
@@ -478,6 +543,9 @@ footer p {
 	background-color: #fb565a;
 	font-size:16px;
 	font-weight:500;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	width: 160px;
 }
 
 .green {
@@ -486,4 +554,34 @@ footer p {
 
 .yellow {
 	background-color: #efc84a;
+}
+
+.slider_button {
+	width: 240px;
+}
+
+.contacts_button {
+	width: 220px;
+	margin: 15px auto;
+
+/*	display: block;*/
+}
+
+.writeToUs_button {
+	width: 260px;
+}
+
+
+/*----------------------------------*/
+
+.greyback {
+	background-color: #eeeeee;
+	position: absolute;
+	height: 545px;
+	min-width: 1440px;
+	width: 100%;
+	left: 0;
+	top:0;
+	z-index: 0;
+
 }
