@@ -398,17 +398,24 @@ main a {
 
 /*-----------------Обратная связь-----------------*/
 
-.writeToUs {
+.screenBlock {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 2;
+}
 
+.writeToUs {
+	box-shadow: 0 15px 40px rgba(0,0,0,0.75);
 	left:50%; 
 	margin-left:-480px;
 	top: 50%;
 	margin-top:-295px;
 	position: fixed;
 	width: 960px;
-	background-color: #eee;
+	background-color: #fff;
 	height: 590px;	
-	z-index: 2;
+	z-index: 3;
 }
 
 .writeToUs div {
@@ -559,6 +566,7 @@ footer p {
 /*----------------------------------*/
 
 .button {
+	border-radius:2px;
 	display: block;
 	text-align:center;
 	color: #ffffff;
@@ -571,6 +579,7 @@ footer p {
 	padding-bottom: 16px;
 	width: 160px;
 }
+
 
 .green {
 	background-color: #00ca74;
