@@ -167,6 +167,7 @@ main a {
 .advantages a:active {
 	background-color: #d7373b;
 	color: #e37376;
+	box-shadow: 0 3px rgba(193,49,53,1) inset;
 }
 
 /*-----------------Услуги-----------------*/
@@ -204,6 +205,7 @@ main a {
 .services a:active {
 	background-color: #d7373b;
 	color: #e37376;
+	box-shadow: 0 3px rgba(193,49,53,1) inset;
 }
 
 .services .green:hover {
@@ -213,6 +215,7 @@ main a {
 .services .green:active {
 	background-color: #00aa62;
 	color: #4dc491;
+	box-shadow: 0 3px rgba(0,153,88,1) inset;
 }
 
 .services .yellow:hover {
@@ -222,6 +225,7 @@ main a {
 .services .yellow:active {
 	background-color: #e5a722;
 	color: #edc265;
+	box-shadow: 0 3px rgba(206,150,31,1) inset;
 }
 
 /*-----------------О нас-----------------*/
@@ -389,6 +393,17 @@ main a {
 
 }
 
+.contacts a:hover {
+	background-color: #e74246;
+	color: #ffffff;
+}
+
+.contacts a:active {
+	background-color: #d7373b;
+	color: #e37376;
+	box-shadow: 0 3px rgba(193,49,53,1) inset;
+}
+
 /*.contacts a {
 	margin:0 auto;
 	display: block;
@@ -398,11 +413,21 @@ main a {
 
 /*-----------------Обратная связь-----------------*/
 
+#okno {
+	display: none;
+}
+
+#okno:target {display: block;}
+
 .screenBlock {
+	display: block;
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
+	left:0; 
+	top: 0;
 	z-index: 2;
+	/*background-color: #eee;*/
 }
 
 .writeToUs {
@@ -495,9 +520,23 @@ main a {
 .closeWrite {
   position: absolute;
   right: 90px;
-  top: 78px;
-	
+  top: 78px;	
 }
+
+.writeToUs_button:hover {
+	background-color: #e74246;
+	color: #ffffff;
+}
+
+.writeToUs_button:active {
+	background-color: #d7373b;
+	color: #e37376;
+	box-shadow: 0 3px rgba(193,49,53,1) inset;
+	/*background-blend-mode: normal;*/
+}
+
+
+
 /*-----------------Footer-----------------*/
 
 .circle {
