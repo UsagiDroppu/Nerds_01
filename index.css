@@ -1,4 +1,3 @@
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -9,9 +8,9 @@
 
 body {
 	padding:0;
-	margin: 0;
+	margin: 0 auto;
 	font-family: Roboto, Arial, sans-serif;
-	width: 100%;
+	width: 1440px;
 }
 
 body li {
@@ -36,7 +35,7 @@ header {
 	padding-left: 140px;
 	padding-right: 140px;
 	padding-top: 50px;
-	padding-bottom: 18px;
+	/*padding-bottom: 18px;*/
 	height: 65px;
 	z-index:1;
 	position: relative;
@@ -127,14 +126,43 @@ main a {
 
 /*-----------------section class="presentation">-----------------*/
 
-.presentation {
-	display: flex;
-	justify-content: space-between;
-	margin-left: 140px;
-	z-index:1;
+.js-presentation{
 	position: relative;
-	height: 412px;
+	margin-left: 140px;
+	height: 430px;
 	width: 1130px;
+}
+
+.presentation {
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+	position: absolute;
+	/*margin-left: 140px;*/
+	z-index:1;
+	height: 430px;
+	width: 1160px;
+	display: none;
+
+	/*background: url("img/nerds-index-slide1.png") no-repeat;*/
+	/*background-position: right bottom;*/
+}
+
+.presentation:nth-of-type(1){
+	background: url("img/nerds-index-slide1.png") no-repeat;
+	background-position: right bottom;
+}
+.presentation:nth-of-type(2){
+	background: url("img/nerds-index-slide2.png") no-repeat;
+	background-position: right bottom;
+}
+.presentation:nth-of-type(3){
+	background: url("img/nerds-index-slide3.png") no-repeat;
+	background-position: right bottom;
+}
+
+.showing {
+	display: block;
+	z-index: 7;
 }
 
 .presentation img {
@@ -144,7 +172,7 @@ main a {
 }
 
 .advantages {
-	margin-top:70px;
+	margin-top:88px;
 	/*margin-right: 50px;*/
 }
 
@@ -168,6 +196,54 @@ main a {
 	background-color: #d7373b;
 	color: #e37376;
 	box-shadow: 0 3px rgba(193,49,53,1) inset;
+}
+
+/*.slider-button {
+	height:18px;
+	width:18px;
+	background-color:#e1e1e1;
+	border-radius:50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}*/
+
+.inside-border {
+	height:4px;
+	width:4px;
+	background-color:white;
+	border-radius:50%;
+	border: solid 2px #c1c1c1;
+	display:none;
+}
+
+
+
+.presentation-buttons {
+	display: flex;
+	width: 90px;
+	justify-content: space-between;
+	position:absolute;
+	/*display: block;*/
+	z-index: 7;
+	top:320px;
+	left:50%;
+	margin-left: -45px;
+}
+
+.presentation-buttons li {
+	height:18px;
+	width:18px;
+	background-color:#fff;
+	border-radius:50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;	
+}
+
+.showing-button {
+	display: block;
+	z-index: 8;
 }
 
 /*-----------------Услуги-----------------*/
@@ -426,7 +502,7 @@ main a {
 	position: fixed;
 	left:0; 
 	top: 0;
-	z-index: 2;
+	z-index: 9;
 	/*background-color: #eee;*/
 }
 
@@ -440,7 +516,7 @@ main a {
 	width: 960px;
 	background-color: #fff;
 	height: 590px;	
-	z-index: 3;
+	z-index: 10;
 }
 
 .writeToUs div {
