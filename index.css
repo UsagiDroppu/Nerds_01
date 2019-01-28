@@ -27,6 +27,8 @@ body ul {
 	margin: 0;
 }
 
+
+
 /*-----------------Header-----------------*/
 
 header {
@@ -731,6 +733,63 @@ footer p {
 	width: 100%;
 	left: 0;
 	top:0;
-	z-index: 0;
+	z-index: -1;
 
+}
+
+.greyback-cat {
+	background-color: #eeeeee;
+	position: absolute;
+	height: 355px;
+	min-width: 1440px;
+	width: 100%;
+	left: 0;
+	top:0;
+	z-index: -1;
+
+}
+
+/*-----------------Магазин-----------------*/
+
+.body-cat {
+	padding:0;
+	margin: 0 auto;
+	font-family: Roboto, Arial, sans-serif;
+	width: 1160px;
+}
+
+.main-catalog h1
+{
+	text-align: center;
+	font-size:55px;
+	line-height: 55px;
+	font-weight:500;
+
+
+	display: block;
+	margin-top:85px;
+	margin-bottom: 100px;
+}
+
+/*.cat {
+	background: red;
+	z-index: 0;
+}*/
+
+.cat-block {
+	display: flex;
+}
+
+.filter {
+	background: grey;
+	display:block;
+	height: 835px;
+	width: 260px;
+}
+
+.cat-products {
+	background: red;
+	display:block;
+	height: 2100px;
+	width: 760px;
 }
