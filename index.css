@@ -788,7 +788,7 @@ footer p {
 }
 
 .cat-products {
-	background: red;
+	/*background: red;*/
 	display:block;
 	/*height: 2100px;*/
 	width: 760px;
@@ -851,7 +851,47 @@ footer p {
 	margin: 0 0;
 	padding-right: 25px;
 	font-style: none;
-	color: black;
+	color: rgb(0,0,0, 0.3);
+}
+
+.filter-par li a:hover {
+	color: rgb(0,0,0, 0.6);
+}
+
+.filter-par li a:active {
+	color: rgb(0,0,0, 1);
+}
+
+.filter-par li a:focus {
+	/*outline:none;*/
+	color: rgb(0,0,0, 1);
+}
+
+.filter-par img {
+	/*opacity: 0.2;*/
+}
+
+.triangles img {
+	opacity: 0.2;
+}
+
+.triangles a:nth-child(2) img {
+	transform: rotate(180deg);
+}
+
+.triangles a {
+
+}
+
+.triangles img:hover {
+	opacity: 1;
+	filter:brightness(5);
+	/*filter: drop-shadow(#ff0000);*/
+}
+
+.triangles img:focus,
+.triangles img:active {
+	opacity: 1;
 }
 
 .cat-pictures {
@@ -866,21 +906,92 @@ footer p {
 }
 
 .cat-pictures li {
-	padding-bottom: 35px;
+	margin-bottom: 35px;
+	position: relative;
+}
+
+.cat-pictures li>img:first-child {
+	opacity: 0.12;
+}
+
+.cat-pictures li>img:first-child:hover{
+	opacity: 1;
+}
+
+/*.cat-pictures li>img:nth-child(2) {
+	box-shadow: 3px 3px rgba(0,0,0,1) inset;
+}*/
+
+.cat-pictures li>img:nth-child(2) {
+	border: 1px solid black;
+	 box-sizing: border-box;
+}
+
+.pictures-hover {
+	background-color: #eeeeee;
+	height: 230px;
+	width: 360px;
+	left:0;
+	bottom:0;
+	position: absolute;
 }
 
 .cat-nav {
 	margin: 0 0;
 	display: flex;
+	/*align-items: center;*/
 }
 
 .cat-nav li {
 	margin-right: 10px;
-	height: 50px;
-	width: 50px;
+	height: 44px;
+	width: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	border-radius: 2px;
 	background-color: #eee;
+
+	font-size:16px;
+	line-height: 18px;
+	font-weight:500;
+	text-transform: uppercase;
 }
 
+.cat-nav a {
+	color: #000;
+}
+
+
+.cat-nav li:hover {
+	background-color: #dfdfdf;
+}
+
+.cat-nav li:active {
+	background-color: #d5d5d5;
+	box-shadow: 0 3px rgba(191,191,191,1) inset;
+	/*color: #959595;*/
+}
+
+.cat-nav a:active {
+	color: #959595;
+}
+
+
+/*.cat-nav a:focus {
+	margin-right: 10px;
+	height: 44px;
+	width: 44px;
+	display: block;
+	align-items: center;
+
+	border-radius: 2px;
+	background-color: #eee;
+	border: 3px solid #dbdbdb;
+	background-color: #eee;
+}
+*/
 .cat-nav li:last-child {
-	width: 260px;
+	width: 254px;
 }
