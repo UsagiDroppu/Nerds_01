@@ -30,10 +30,36 @@
 				<h1>Магазин готовых шаблонов</h1>
 				
 			<div class="cat-block">
+				
 				<div class="filter">
-					<h2 class="visually-hidden">Фильтр шаблонов</h2>
-					<p>Стоимость:</p>
-					<!-- Здесь будет форма -->
+					<fieldset class="filter-item">
+						<h2 class="visually-hidden">Фильтр шаблонов</h2>
+						<legend>Стоимость:</legend>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class = "bar"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<label class="min-price">от<input name="min-price" type="text" value="0"></label>
+								<label class="max-price">от<input name="max-price" type="text" value="15000"></label>
+							</div>
+						</div>
+						<!-- Здесь будет форма -->
+
+					</fieldset>
+					<fieldset class="grid-block">
+						<legend>Сетка:</legend>
+						<input type="radio" name="grid" id="adaptive">
+						<label for="adaptive">Адаптивная</label><br><br>
+						<input type="radio" name="grid" id="fixed">
+						<label for="fixed">Фиксированная</label><br><br>
+						<input type="radio" name="grid" id="rubber">
+						<label for="rubber">Резиновая</label>
+					</fieldset>
 				</div>
 
 				<div class="cat-products">
@@ -54,27 +80,56 @@
 						<li>
 							<img src="img/browser.svg">
 							<img src="img/img-sedona.jpg" alt = "Шаблон sedona">
-							<div class="pictures-hover"></div>
+							<div class="pictures-hover">
+								<b>Sedona</b>
+								<p>Информационный сайт<br>для туристов</p>
+								<a class="button cat-button" href="#">9 900 руб.</a>
+							</div>
 						</li>
 						<li>
 							<img src="img/browser.svg">
-							<a href="#"><img src="img/img-pink.jpg" alt = "Шаблон pink"></a>
+							<img src="img/img-pink.jpg" alt = "Шаблон pink">
+							<div class="pictures-hover">
+								<b>Pink app</b>
+								<p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+								<a class="button cat-button" href="#">9 900 руб.</a>
+							</div>
 						</li>
 						<li>
 							<img src="img/browser.svg">
-							<a href="#"><img src="img/img-barbershop.jpg" alt = "Шаблон barbershop"></a>
+							<img src="img/img-barbershop.jpg" alt = "Шаблон barbershop">
+							<div class="pictures-hover">
+								<b>Barbershop</b>
+								<p>Сайт салоны красоты.<br>Для мужчин, да.</p>
+								<a class="button cat-button" href="#">9 900 руб.</a>
+							</div>
 						</li>
 						<li>
 							<img src="img/browser.svg">
-							<a href="#"><img src="img/img-mishka.jpg" alt = "Шаблон mishka"></a>
+							<img src="img/img-mishka.jpg" alt = "Шаблон mishka">
+							<div class="pictures-hover">
+								<b>MISHKA</b>
+								<p>Интернет-магазин<br>вязаных игрушек</p>
+								<a class="button cat-button" href="#">9 900 руб.</a>
+							</div>
 						</li>
 						<li>
 							<img src="img/browser.svg">
-							<a href="#"><img src="img/img-aplus.jpg" alt = "Шаблон aplus"></a>
+							<img src="img/img-aplus.jpg" alt = "Шаблон aplus">
+							<div class="pictures-hover">
+								<b>A Plus</b>
+								<p>Лендинг курсов повышения<br>квалификации</p>
+								<a class="button cat-button" href="#">9 900 руб.</a>
+							</div>
 						</li>
 						<li>
 							<img src="img/browser.svg">
-							<a href="#"><img src="img/img-kvast.jpg" alt = "Шаблон kvast"></a>
+							<img src="img/img-kvast.jpg" alt = "Шаблон kvast">
+							<div class="pictures-hover">
+								<b>КВАСТ</b>
+								<p>Промо-сайт производителя<br>крафтового кваса</p>
+								<a class="button cat-button" href="#">9 900 руб.</a>
+							</div>
 						</li>
 					</ul>
 					<ul class="cat-nav">
