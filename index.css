@@ -226,6 +226,7 @@ main a {
 	width: 90px;
 	justify-content: space-between;
 	position:absolute;
+	/*cursor: pointer;*/
 	/*display: block;*/
 	z-index: 7;
 	top:320px;
@@ -234,6 +235,7 @@ main a {
 }
 
 .presentation-buttons li {
+	cursor: pointer;
 	height:18px;
 	width:18px;
 	background-color:#fff;
