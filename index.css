@@ -1232,6 +1232,7 @@ footer p {
 
 	border-radius: 2px;
 	background-color: #eee;
+	color: #000;
 
 	font-size:16px;
 	line-height: 18px;
@@ -1239,24 +1240,24 @@ footer p {
 	text-transform: uppercase;
 }
 
-.cat-nav a {
+/*.nav-buttons {
 	color: #000;
 }
+*/
 
-
-.cat-nav li:hover {
+.nav-buttons:hover {
 	background-color: #dfdfdf;
 }
 
-.cat-nav li:active {
+.nav-buttons:active {
 	background-color: #d5d5d5;
 	box-shadow: 0 3px rgba(191,191,191,1) inset;
-	/*color: #959595;*/
-}
-
-.cat-nav a:active {
 	color: #959595;
 }
+
+/*.cat-nav a:active {
+	color: #959595;
+}*/
 
 .nav-buttons-next{
 	width: 254px;
